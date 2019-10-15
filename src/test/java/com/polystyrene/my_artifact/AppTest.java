@@ -1,6 +1,6 @@
 package com.polystyrene.my_artifact;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -12,6 +12,6 @@ public class AppTest
 	@Test
     public void testApp()
     {
-        assertTrue( true );
+        assertEquals(6, new App().sum(1, 2, 3) );
     }
 }

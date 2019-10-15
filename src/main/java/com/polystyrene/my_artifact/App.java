@@ -11,4 +11,11 @@ public class App
         Log log = LogFactory.getLog(App.class);
         log.info("Hello, world!");
     }
+    int sum(int ... ns) {
+        int x = 0;
+        for (int n : ns) {
+            x += n;
+        }
+        return x;
+    }
 }
